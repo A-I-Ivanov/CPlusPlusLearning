@@ -346,11 +346,14 @@ int main()
 
 	//testing the palindrome class
 
-	palinFinder palFinder = { "afadadddaaaddd" };
-	string answer = palFinder.getLargest();
+	while (true) {
+		std::string in;
+		cin >> in;
+		palinFinder palFinder = { in };
+		string answer = palFinder.getLargest();
 
-	std::cout << answer << endl;
-	cin >> answer;
+		std::cout << answer << endl;
+	}
 	return 0;
 }
 
