@@ -202,7 +202,7 @@ std::string palinFinder::getLargest()
 			largestSize = currentSizeAndCenters.first;
 		}
 
-		if ((processLocation + largestSize) <= inputString.size() / 2)
+		if ((processLocation + largestSize) < inputString.size() / 2)
 		{
 			processLocation++;
 
@@ -351,7 +351,6 @@ int main()
 		cin >> in;
 		palinFinder palFinder = { in };
 		string answer = palFinder.getLargest();
-
 		std::cout << answer << endl;
 	}
 	return 0;
