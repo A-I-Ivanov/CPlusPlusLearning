@@ -202,7 +202,7 @@ std::string palinFinder::getLargest()
 			largestSize = currentSizeAndCenters.first;
 		}
 
-		if ((processLocation + largestSize) <= inputString.size() / 2)
+		if ((processLocation + largestSize) < inputString.size() / 2)
 		{
 			processLocation++;
 
@@ -346,7 +346,7 @@ int main()
 
 	//testing the palindrome class
 
-	palinFinder palFinder = { "afadadddaaaddd" };
+	palinFinder palFinder = { "radi" };
 	string answer = palFinder.getLargest();
 
 	std::cout << answer << endl;
